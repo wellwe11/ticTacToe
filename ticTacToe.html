@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dialogStyle.css" />
+    <link rel="stylesheet" href="ticTacToeReset.css" />
+    <link rel="stylesheet" href="ticTacToe.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog id="initialInfo">
+      <form>
+        <label for="player1">Player 1 name:</label>
+        <input type="text" id="player1" name="playerName" required />
+        <br />
+        <label for="player2">Player 2 name:</label>
+        <input type="text" id="player2" name="playerName" required />
+        <br />
+        <label>
+          <input type="radio" name="vsOptions" value="1" id="vsPlayer" />
+          Will you play against another player?</label
+        >
+        <br />
+        <label>
+          <input type="radio" name="vsOptions" value="2" id="vsComputer" />
+          Will you play against the computer?
+        </label>
+        <br />
+        <button id="letsGoBtn" type="button">LETS GO</button>
+      </form>
+      <br />
+    </dialog>
+    <div id="ticTacToe">
+      <h2 id="playerScoreInfo"><p></p></h2>
+      <h2 id="computerScoreInfo"><p></p></h2>
+      <button id="clickBtn">randomBtn</button>
+      <input type="text" class="userInput" placeholder="pick your number.." />
+      <div class="mainDiv" id="mainDiv">
+        <button id="one" class="individualDivs" data-initial="1">
+          <p></p>
+        </button>
+        <button id="two" class="individualDivs" data-initial="2">
+          <p></p>
+        </button>
+        <button id="three" class="individualDivs" data-initial="3">
+          <p></p>
+        </button>
+        <button id="four" class="individualDivs" data-initial="4">
+          <p></p>
+        </button>
+        <button id="five" class="individualDivs" data-initial="5">
+          <p></p>
+        </button>
+        <button id="six" class="individualDivs" data-initial="6">
+          <p></p>
+        </button>
+        <button id="seven" class="individualDivs" data-initial="7">
+          <p></p>
+        </button>
+        <button id="eight" class="individualDivs" data-initial="8">
+          <p></p>
+        </button>
+        <button id="nine" class="individualDivs" data-initial="9">
+          <p></p>
+        </button>
+      </div>
+      <button id="resetBtn">RESET</button>
+      <h2 id="winningCombo"><p></p></h2>
+      <h3 id="info"></h3>
+    </div>
+    <script type="module" src="createNewGame.js"></script>
+    <script type="module" src="startDialog.js"></script>
+    <script type="module" src="playGame.js"></script>
+  </body>
+</html>

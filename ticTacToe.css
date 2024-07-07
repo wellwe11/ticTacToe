@@ -1,0 +1,63 @@
+body {
+  background-color: rgba(44, 56, 46, 0.661);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainDiv {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.individualDivs {
+  background-color: wheat;
+
+  padding: 1px;
+  margin: 1px;
+  border: 1px solid black;
+
+  height: 60px;
+  width: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individualDivs:hover {
+  background-color: aliceblue;
+}
+
+#clickBtn,
+.userInput {
+  width: 100px;
+  height: 30px;
+}
+
+#clickBtn {
+  display: none;
+}
+
+#ticTacToe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+}
+
+#initialInfo[open] {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

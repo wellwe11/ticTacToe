@@ -1,0 +1,61 @@
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-300%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes textSlide {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-300%);
+    }
+}
+
+@keyframes resize {
+    from {
+        height: 70px;
+    }
+    to {
+        height: 120px;
+    }
+}
+
+#initialInfo {
+  height: 70px;
+  width: 300px;
+
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.411);
+
+  display: flex;
+  margin-top: 10%;
+
+
+  border: 1px solid #ccc;
+  /* animation: resize 0.5 ease-in-out forwards; */
+  /* animation: slideIn 0.5s ease-in-out forwards; */
+}
+
+#initialInfo label {
+  color: white;
+
+  animation: textSlice 0.5 ease-in-out forwards;
+}
+
+#initialInfo label,
+#initialInfo input {
+}
+
+#initialInfo {
+}
+
+
+
+/* make dialog small, and animate to bigger depending on what is clicked
